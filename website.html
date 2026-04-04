@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Giant Screen Productions</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {margin:0; font-family:Arial; background:black; color:white;}
+
+.hero {position:relative; height:100vh; overflow:hidden;}
+.hero video {width:100%; height:100%; object-fit:cover;}
+.overlay {
+position:absolute; top:0; left:0; width:100%; height:100%;
+display:flex; flex-direction:column; justify-content:center; align-items:center;
+background:rgba(0,0,0,0.5);
+text-align:center;
+}
+h1 {font-size:3em;}
+
+.slider {
+width:100%;
+overflow:hidden;
+}
+.slides {
+display:flex;
+animation: slide 15s infinite;
+}
+.slides img {
+width:100%;
+height:400px;
+object-fit:cover;
+}
+
+@keyframes slide {
+0% {transform:translateX(0);}
+25% {transform:translateX(0);}
+33% {transform:translateX(-100%);}
+58% {transform:translateX(-100%);}
+66% {transform:translateX(-200%);}
+91% {transform:translateX(-200%);}
+100% {transform:translateX(0);}
+}
+
+.section {padding:40px; text-align:center;}
+
+button {
+padding:15px 25px;
+background:#00ffe1;
+border:none;
+cursor:pointer;
+font-size:16px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="hero">
+<video autoplay muted loop>
+<source src="video.mp4" type="video/mp4">
+</video>
+<div class="overlay">
+<h1>LED Video Wall Rentals</h1>
+<p>Trade Shows • Events • High-End Visuals</p>
+<button onclick="window.location='tel:7138420259'">Call Now</button>
+</div>
+</div>
+
+<div class="slider">
+<div class="slides">
+<img src="image1.jpg">
+<img src="image2.jpg">
+<img src="image3.jpg">
+<img src="image4.jpg">
+</div>
+</div>
+
+<div class="section">
+<h2>Packages</h2>
+<p>Basic: $2,500</p>
+<p>Standard: $3,500</p>
+<p>Premium: $4,500+</p>
+</div>
+
+<div class="section">
+<h2>Contact</h2>
+<p>713-842-0259</p>
+<p>collompjc@gmail.com</p>
+</div>
+
+</body>
+</html>
