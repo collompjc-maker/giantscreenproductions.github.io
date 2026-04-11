@@ -1,93 +1,119 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Giant Screen Productions</title>
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Giant Screen Productions LLC</title>
+
 <style>
-body {margin:0; font-family:Arial; background:black; color:white;}
-
-.hero {position:relative; height:100vh; overflow:hidden;}
-.hero video {width:100%; height:100%; object-fit:cover;}
-.overlay {
-position:absolute; top:0; left:0; width:100%; height:100%;
-display:flex; flex-direction:column; justify-content:center; align-items:center;
-background:rgba(0,0,0,0.5);
-text-align:center;
-}
-h1 {font-size:3em;}
-
-.slider {
-width:100%;
-overflow:hidden;
-}
-.slides {
-display:flex;
-animation: slide 15s infinite;
-}
-.slides img {
-width:100%;
-height:400px;
-object-fit:cover;
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #000;
+    color: #fff;
 }
 
-@keyframes slide {
-0% {transform:translateX(0);}
-25% {transform:translateX(0);}
-33% {transform:translateX(-100%);}
-58% {transform:translateX(-100%);}
-66% {transform:translateX(-200%);}
-91% {transform:translateX(-200%);}
-100% {transform:translateX(0);}
+header {
+    height: 100vh;
+    background: url('https://images.unsplash.com/photo-1514525253161-7a46d19cd819') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
-.section {padding:40px; text-align:center;}
-
-button {
-padding:15px 25px;
-background:#00ffe1;
-border:none;
-cursor:pointer;
-font-size:16px;
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
 }
 
+header p {
+    font-size: 1.2rem;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 15px 25px;
+    background: red;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.service {
+    margin: 15px;
+    padding: 20px;
+    border: 1px solid #333;
+    width: 250px;
+}
+
+iframe {
+    width: 100%;
+    max-width: 400px;
+    height: 500px;
+    border: none;
+}
+
+footer {
+    padding: 30px;
+    background: #111;
+}
 </style>
 </head>
 
 <body>
 
-<div class="hero">
-<video autoplay muted loop>
-<source src="c94eec8b-514b-4b48-b42f-fb90ee0a7bd0.mp4" type="video/mp4">
-</video>
-<div class="overlay">
-<h1>LED Video Wall Rentals</h1>
-<p>Trade Shows • Events • High-End Visuals</p>
-<button onclick="window.location='tel:7138420259'">Call Now</button>
-</div>
-</div>
-<div class="slider">
-<div class="slides">
-<img src="12f37c73-b655-4b93-a61a-1f8867df8104.jpg">
-<img src="1be0d865-18c0-4199-a555-49328b0d8a6a.jpg">
-<img src="62f73ecb-3c78-41e3-b3c2-4c5f98587abf.jpg">
-<img src="7fb874b2-8be0-4199-b9cb-c64bed521e66.jpg">
-<img src="94c29d47-7a05-48e7-9d39-025080a58c99.jpg">
-</div>
-</div>
+<header>
+    <div>
+        <h1>GIANT SCREEN PRODUCTIONS LLC</h1>
+        <p>LED Video Wall Rentals for Events, Concerts & Corporate Experiences</p>
+        <p>📞 713-842-0259</p>
+        <a href="tel:17138420259" class="btn">CALL NOW</a>
+    </div>
+</header>
 
-<div class="section">
-<h2>Packages</h2>
-<p>Basic: $2,500</p>
-<p>Standard: $3,500</p>
-<p>Premium: $4,500+</p>
-</div>
+<section>
+    <h2>OUR SERVICES</h2>
+    <div class="services">
+        <div class="service">LED Video Wall Rentals</div>
+        <div class="service">Concert & Stage Screens</div>
+        <div class="service">Corporate Event Displays</div>
+        <div class="service">Indoor & Outdoor Setups</div>
+    </div>
+</section>
 
-<div class="section">
-<h2>Contact</h2>
-<p>713-842-0259</p>
-<p>collompjc@gmail.com</p>
-</div>
+<section>
+    <h2>SEE US IN ACTION</h2>
+    <!-- Instagram Embed -->
+    <iframe src="https://www.instagram.com/giantscreenproductions/embed"></iframe>
+</section>
+
+<section>
+    <h2>WHY CHOOSE US</h2>
+    <p>Houston-based. Fast setup. Massive screens. Reliable service. No excuses.</p>
+</section>
+
+<section>
+    <h2>GET A QUOTE</h2>
+    <p>Call now or message us on Instagram to book your event.</p>
+    <a href="tel:17138420259" class="btn">CALL NOW</a>
+</section>
+
+<footer>
+    <p>© 2026 Giant Screen Productions LLC</p>
+</footer>
 
 </body>
 </html>
